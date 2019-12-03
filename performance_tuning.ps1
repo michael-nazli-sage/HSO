@@ -197,8 +197,8 @@ $serviceOneSync = Write-Output "OneSyncSvc_$suffix"
 Stop-Service $serviceOneSync
 
 # Print Spooler
-Stop-Service Spooler
-Set-Service Spooler -StartupType Disabled
+#Stop-Service Spooler
+#Set-Service Spooler -StartupType Disabled
 
 # Windows Push Notifications System Service
 Stop-Service WpnService
@@ -232,20 +232,20 @@ Stop-Service SSDPSRV
 Set-Service SSDPSRV -StartupType Disabled
 
 # Windows Audio
-Stop-Service Audiosrv
-Set-Service Audiosrv -StartupType Disabled
+#Stop-Service Audiosrv
+#Set-Service Audiosrv -StartupType Disabled
 
 # Windows Audio Endpoint Builder
-Stop-Service AudioEndpointBuilder
-Set-Service AudioEndpointBuilder -StartupType Disabled
+#Stop-Service AudioEndpointBuilder
+#Set-Service AudioEndpointBuilder -StartupType Disabled
 
 # Certificate Propagation
-Stop-Service lfsvc
-Set-Service lfsvc -StartupType Disabled
+Stop-Service CertPropSvc
+Set-Service CertPropSvc -StartupType Disabled
 
 # Geolocation Service
-Stop-Service FontCache
-Set-Service FontCache -StartupType Disabled
+Stop-Service lfsvc
+Set-Service lfsvc -StartupType Disabled
 
 # Network Connection Broker
 Stop-Service NcbService
