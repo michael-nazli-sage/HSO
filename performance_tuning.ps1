@@ -201,8 +201,8 @@ Stop-Service $serviceOneSync
 #Set-Service Spooler -StartupType Disabled
 
 # Windows Push Notifications System Service
-Stop-Service WpnService
-Set-Service WpnService -StartupType Disabled
+#Stop-Service WpnService
+#Set-Service WpnService -StartupType Disabled
 
 # CDPUserSvc 
 $serviceCDPUSer = Write-Output "CDPUserSvc_$suffix"
